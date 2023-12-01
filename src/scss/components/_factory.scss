@@ -1,0 +1,20 @@
+.factory {
+  margin-top: var(--margin-sections);
+}
+
+.factory__title {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 600px auto 300px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.factory__title-description {
+  min-width: 380px;
+}
+
+.factory__title-header {
+  font-size: 60px;
+  font-weight: 700;
+}

@@ -1,0 +1,11 @@
+.representative-offices {
+  margin-top: var(--margin-sections);
+}
+
+.link-to-office path {
+  transition: var(--transition);
+
+  &:hover {
+    fill: var(--light-gray-color);
+  }
+}

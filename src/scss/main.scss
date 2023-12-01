@@ -1,0 +1,16 @@
+/* base files */
+@import "./base/base";
+@import "./base/containers";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/vars";
+
+
+/* components files */
+@import "./components/header";
+@import "./components/factory";
+@import "./components/about";
+@import "./components/products";
+@import "./components/map";
+@import "./components/news";
+@import "./components/footer";

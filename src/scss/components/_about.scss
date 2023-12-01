@@ -1,0 +1,22 @@
+.about {
+  margin-top: var(--margin-sections);
+}
+
+.about__description {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 110px 110px;
+  grid-template-columns: 580px 580px;
+  line-height: 1.4;
+}
+
+.about__images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 580px;
+    height: 280px;
+  }
+}
