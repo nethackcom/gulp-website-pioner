@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const fileInclude = require("gulp-file-include");
 const sass = require("gulp-sass")(require("sass"));
+const imageMin = require("gulp-imagemin");
 const server = require("gulp-server-livereload");
 const clean = require("gulp-clean");
 const fs = require("fs");
@@ -45,6 +46,7 @@ gulp.task("js", () => {
 
 gulp.task("images", () => {
     return gulp.src("./src/img/**/*")
+        .pipe(imageMin({ verbose: true }))
         .pipe(gulp.dest("./build/img/"))
 });
 
