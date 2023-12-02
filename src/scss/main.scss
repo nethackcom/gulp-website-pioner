@@ -1,4 +1,5 @@
 /* base files */
+@import "./base/mixins";
 @import "./base/base";
 @import "./base/containers";
 @import "./base/fonts";
@@ -8,6 +9,8 @@
 
 /* components files */
 @import "./components/header";
+@import "./components/nav";
+@import "./components/nav-icon";
 @import "./components/factory";
 @import "./components/about";
 @import "./components/products";

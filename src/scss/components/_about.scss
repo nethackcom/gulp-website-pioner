@@ -8,6 +8,18 @@
   grid-template-rows: 110px 110px;
   grid-template-columns: 580px 580px;
   line-height: 1.4;
+
+  @include media-desktop {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    margin-bottom: 40px;
+  }
+
+  @include media-laptop {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    margin-bottom: 40px;
+  }
 }
 
 .about__images {
@@ -15,8 +27,32 @@
   align-items: center;
   justify-content: space-between;
 
+  @include media-desktop {
+    justify-content: start;
+    gap: 40px;
+  }
+
+  @include media-tablet {
+    flex-direction: column;
+  }
+
   img {
     width: 580px;
     height: 280px;
+
+    @include media-desktop {
+      width: 450px;
+      height: auto;
+    }
+
+    @include media-laptop {
+      width: 340px;
+      height: auto;
+    }
+
+    @include media-tablet {
+      width: 100%;
+      height: auto;
+    }
   }
 }

@@ -7,12 +7,20 @@
 .footer__box {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 60px;
+  }
 }
 
 .footer__nav {
   display: flex;
   justify-content: space-between;
   gap: 60px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 
   ul {
     display: flex;
@@ -29,6 +37,11 @@
       color: var(--primary-color);
     }
   }
+}
+
+.footer__nav-first-row {
+  display: flex;
+  gap: 60px;
 }
 
 .footer__copyright {

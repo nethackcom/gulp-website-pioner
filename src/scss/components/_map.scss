@@ -1,5 +1,9 @@
 .representative-offices {
   margin-top: var(--margin-sections);
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .link-to-office path {

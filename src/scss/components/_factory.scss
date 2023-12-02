@@ -1,5 +1,9 @@
 .factory {
   margin-top: var(--margin-sections);
+
+  @include media-laptop {
+    margin-top: 0;
+  }
 }
 
 .factory__title {
@@ -8,13 +12,27 @@
   grid-template-columns: 600px auto 300px;
   align-items: center;
   margin-bottom: 40px;
+
+  @include media-laptop {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
 }
 
 .factory__title-description {
   min-width: 380px;
+
+  @include media-mobile {
+    min-width: fit-content;
+  }
 }
 
 .factory__title-header {
   font-size: 60px;
   font-weight: 700;
+
+  @include media-laptop {
+    font-size: 48px;
+  }
 }
