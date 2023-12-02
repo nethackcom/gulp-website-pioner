@@ -13,8 +13,10 @@
   align-items: flex-end;
   gap: 20px;
 
-  @include media-laptop {
-    display: none;
+  &.not-mobile {
+    @include media-laptop {
+      display: none;
+    }
   }
 }
 
