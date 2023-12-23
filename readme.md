@@ -5,7 +5,7 @@
 <h3>
   Github Pages
 </h3>
-https://nethackcom.github.io/website-pioner/build/
+https://nethackcom.github.io/gulp-website-pioner/build/
 
 ### Стек
 <p>
